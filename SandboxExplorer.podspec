@@ -9,23 +9,19 @@
 Pod::Spec.new do |s|
   s.name             = 'SandboxExplorer'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of SandboxExplorer.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.summary          = 'Simple debugging tool for exploring the contents of your iOS app sandbox.'
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+This tool provides a simple way to browse the file contents of your iOS app Sandbox.
+With the UI provided you can navigate the sandbox content and view the size of files and folders.
+Between usages the file sizes are cached and changes in the like are visible in the UI.
                        DESC
 
-  s.homepage         = 'https://github.com/Erik Sundin/SandboxExplorer'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/eriksundin/SandboxExplorer'
+  s.screenshots     = 'https://github.com/eriksundin/SandboxExplorer/blob/master/ss1.png', 'https://github.com/eriksundin/SandboxExplorer/blob/master/ss2.png'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Erik Sundin' => 'erik.sundin@blocket.se' }
-  s.source           = { :git => 'https://github.com/Erik Sundin/SandboxExplorer.git', :tag => s.version.to_s }
+  s.author           = { 'Erik Sundin' => 'erik@eriksundin.se' }
+  s.source           = { :git => 'https://github.com/eriksundin/SandboxExplorer.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/erik_sundin'
 
   s.ios.deployment_target = '8.0'
