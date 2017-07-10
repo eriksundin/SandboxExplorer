@@ -18,7 +18,7 @@ Between usages the file sizes are cached and changes in the like are visible in 
                        DESC
 
   s.homepage         = 'https://github.com/eriksundin/SandboxExplorer'
-  s.screenshots     = 'https://github.com/eriksundin/SandboxExplorer/blob/master/ss1.png', 'https://github.com/eriksundin/SandboxExplorer/blob/master/ss2.png'
+  s.screenshots     = 'https://github.com/eriksundin/SandboxExplorer/blob/master/ss1.png?raw=true', 'https://github.com/eriksundin/SandboxExplorer/blob/master/ss2.png?raw=true'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Erik Sundin' => 'erik@eriksundin.se' }
   s.source           = { :git => 'https://github.com/eriksundin/SandboxExplorer.git', :tag => s.version.to_s }
