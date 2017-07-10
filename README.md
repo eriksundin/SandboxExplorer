@@ -4,11 +4,10 @@
 [![License](https://img.shields.io/cocoapods/l/SandboxExplorer.svg?style=flat)](http://cocoapods.org/pods/SandboxExplorer)
 [![Platform](https://img.shields.io/cocoapods/p/SandboxExplorer.svg?style=flat)](http://cocoapods.org/pods/SandboxExplorer)
 
+Simple debugging tool for exploring the contents of your iOS app sandbox and identifying size changes in stored files.
+
 ![Screenshot 1](ss1.png?raw=true "Screenshot1")
 ![Screenshot 2](ss2.png?raw=true "Screenshot2")
-![Screenshot 3](ss3.png?raw=true "Screenshot3")
-
-Simple debugging tool for exploring the contents of your iOS app sandbox and identifying size changes in stored files.
 
 ## Example
 
@@ -22,6 +21,34 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod "SandboxExplorer"
 ```
+
+Show the SandboxExplorer UI using:
+```ruby
+import SandboxExplorer
+
+SandboxExplorer.shared.toggleVisibility()
+```
+
+Tip! Add "shake to show" functionality to your root viewcontroller.
+```ruby
+import SandboxExplorer
+
+class MyRootViewController: UIViewController {
+
+  override var canBecomeFirstResponder: Bool {
+        return true
+    }
+
+    override func motionBegan(_ motion: UIEventSubtype, with event: UIEvent?) {
+        if motion == .motionShake {
+            SandboxExplorer.shared.toggleVisibility()
+        }
+    }
+}
+```
+
+
+
 
 ## Author
 
