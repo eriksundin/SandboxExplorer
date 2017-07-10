@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SandboxExplorer'
-  s.version          = '0.1.0'
+  s.version          = '1.0.0'
   s.summary          = 'Simple debugging tool for exploring the contents of your iOS app sandbox.'
 
   s.description      = <<-DESC
