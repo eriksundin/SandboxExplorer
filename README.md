@@ -56,4 +56,4 @@ Erik Sundin, erik@eriksundin.se
 
 ## License
 
-SandboxSize is available under the MIT license. See the LICENSE file for more info.
+SandboxExplorer is available under the MIT license. See the LICENSE file for more info.
