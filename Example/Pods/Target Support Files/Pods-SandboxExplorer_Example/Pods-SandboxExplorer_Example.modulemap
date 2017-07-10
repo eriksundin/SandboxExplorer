@@ -1,0 +1,6 @@
+framework module Pods_SandboxExplorer_Example {
+  umbrella header "Pods-SandboxExplorer_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

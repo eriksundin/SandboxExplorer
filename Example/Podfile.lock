@@ -1,0 +1,16 @@
+PODS:
+  - SandboxExplorer (0.1.0)
+
+DEPENDENCIES:
+  - SandboxExplorer (from `../`)
+
+EXTERNAL SOURCES:
+  SandboxExplorer:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SandboxExplorer: ba1477625c021e29c40cb068b3fb6c6d2d68931e
+
+PODFILE CHECKSUM: fafee279c502da87a8fc5f5ee963481c67a6203b
+
+COCOAPODS: 1.2.1

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="SandboxExplorer_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SanboxExplorer gives you a simple UI for you app sandbox." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wzl-fO-SF3">
+                                <rect key="frame" x="16" y="40" width="343" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You can use it to track your apps disk footprint and identify changes over time." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kCc-zE-eYM">
+                                <rect key="frame" x="16" y="101" width="343" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shake to show explorer!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ha1-o1-8q0">
+                                <rect key="frame" x="81" y="322" width="213" height="23"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hPr-TS-b9f">
+                                <rect key="frame" x="84" y="597" width="207" height="30"/>
+                                <state key="normal" title="Tap to write something to disk"/>
+                                <connections>
+                                    <action selector="writeSomething:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="e0N-aO-mm2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ha1-o1-8q0" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="7Wg-es-xWz"/>
+                            <constraint firstItem="kCc-zE-eYM" firstAttribute="top" secondItem="wzl-fO-SF3" secondAttribute="bottom" constant="20" id="90E-QS-fZd"/>
+                            <constraint firstItem="Ha1-o1-8q0" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="Dmk-oB-lRQ"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="hPr-TS-b9f" secondAttribute="bottom" constant="40" id="IgY-BS-xla"/>
+                            <constraint firstItem="hPr-TS-b9f" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="SjZ-TU-KUh"/>
+                            <constraint firstItem="wzl-fO-SF3" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="cax-8s-YDi"/>
+                            <constraint firstItem="kCc-zE-eYM" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="jAj-kv-P75"/>
+                            <constraint firstItem="kCc-zE-eYM" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="uYF-2n-A9i"/>
+                            <constraint firstItem="wzl-fO-SF3" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="wPw-GS-ubk"/>
+                            <constraint firstItem="wzl-fO-SF3" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="20" id="yPd-fd-iSu"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="36.431784107946029"/>
+        </scene>
+    </scenes>
+</document>
