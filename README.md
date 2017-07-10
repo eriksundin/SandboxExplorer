@@ -4,7 +4,9 @@
 [![License](https://img.shields.io/cocoapods/l/SandboxExplorer.svg?style=flat)](http://cocoapods.org/pods/SandboxExplorer)
 [![Platform](https://img.shields.io/cocoapods/p/SandboxExplorer.svg?style=flat)](http://cocoapods.org/pods/SandboxExplorer)
 
-## Description
+![Screenshot 1](ss1.png?raw=true "Screenshot1")
+![Screenshot 2](ss2.png?raw=true "Screenshot2")
+![Screenshot 3](ss3.png?raw=true "Screenshot3")
 
 Simple debugging tool for exploring the contents of your iOS app sandbox and identifying size changes in stored files.
 
