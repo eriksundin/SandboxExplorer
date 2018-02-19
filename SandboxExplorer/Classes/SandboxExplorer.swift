@@ -31,7 +31,7 @@ public class SandboxExplorer: NSObject {
             })
         } else {
             isVisible = true
-            let explorer = SanboxExplorerViewController(data: [])
+            let explorer = SandboxExplorerViewController(data: [])
             if let files = traverse(root: URL(fileURLWithPath: NSHomeDirectory()), sizeCache: &sizeCache) {
                 explorer.update(with: files.0)
                 UserDefaults.standard.set(sizeCache, forKey: SandboxExplorer.sizeCacheDefaultsKey)
@@ -45,17 +45,17 @@ public class SandboxExplorer: NSObject {
 
 }
 
-extension SandboxExplorer: SanboxExplorerDelegate {
+extension SandboxExplorer: SandboxExplorerDelegate {
 
-    func sanboxExplorerDidTapCancel(_ controller: SanboxExplorerViewController) {
+    func sandboxExplorerDidTapCancel(_ controller: SandboxExplorerViewController) {
         toggleVisibility()
     }
 }
 
 /// Delegate for the SandboxExplorerViewController
-protocol SanboxExplorerDelegate: class {
+protocol SandboxExplorerDelegate: class {
 
-    func sanboxExplorerDidTapCancel(_ controller: SanboxExplorerViewController)
+    func sandboxExplorerDidTapCancel(_ controller: SandboxExplorerViewController)
 }
 
 /// Represents a file or directory.
@@ -142,9 +142,9 @@ class FileCell: UITableViewCell {
 }
 
 /// The main sandbox file explorer VC.
-class SanboxExplorerViewController: UITableViewController {
+class SandboxExplorerViewController: UITableViewController {
 
-    weak var delegate: SanboxExplorerDelegate?
+    weak var delegate: SandboxExplorerDelegate?
     private var folderImage: UIImage? = nil
     private var fileImage: UIImage? = nil
     private var data: [File]
@@ -165,7 +165,7 @@ class SanboxExplorerViewController: UITableViewController {
     }
 
     @objc func closeButtonTapped() {
-        delegate?.sanboxExplorerDidTapCancel(self)
+        delegate?.sandboxExplorerDidTapCancel(self)
     }
 
     func update(with data: [File]) {
@@ -217,7 +217,7 @@ class SanboxExplorerViewController: UITableViewController {
             return
         }
 
-        let controller = SanboxExplorerViewController(data: children)
+        let controller = SandboxExplorerViewController(data: children)
         controller.navigationItem.title = file.name
         controller.delegate = self
         navigationController?.pushViewController(controller, animated: true)
@@ -225,9 +225,9 @@ class SanboxExplorerViewController: UITableViewController {
 
 }
 
-extension SanboxExplorerViewController: SanboxExplorerDelegate {
+extension SandboxExplorerViewController: SandboxExplorerDelegate {
 
-    func sanboxExplorerDidTapCancel(_ controller: SanboxExplorerViewController) {
-        delegate?.sanboxExplorerDidTapCancel(self)
+    func sandboxExplorerDidTapCancel(_ controller: SandboxExplorerViewController) {
+        delegate?.sandboxExplorerDidTapCancel(self)
     }
 }
