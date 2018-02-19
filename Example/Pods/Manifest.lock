@@ -1,5 +1,5 @@
 PODS:
-  - SandboxExplorer (1.0.0)
+  - SandboxExplorer (2.0.0)
 
 DEPENDENCIES:
   - SandboxExplorer (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  SandboxExplorer: 6ed32f8230317640f6fb83886d769034465808e3
+  SandboxExplorer: 402ce83bccf31bdcba0310467e5483a4f2263e39
 
-PODFILE CHECKSUM: 71fc16ef6ccb35c614b7566faf747835706f7439
+PODFILE CHECKSUM: 7bab245949136894ee61b031d0ae08eed159e302
 
 COCOAPODS: 1.4.0

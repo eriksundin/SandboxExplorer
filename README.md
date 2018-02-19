@@ -47,7 +47,10 @@ class MyRootViewController: UIViewController {
 }
 ```
 
+## Changelog
 
+2.0.0 - Swift 4 upgrade
+1.0.0 - Initial release (Swift 3.2)
 
 
 ## Author
