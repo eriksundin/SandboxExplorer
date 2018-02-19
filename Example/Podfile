@@ -1,4 +1,5 @@
 use_frameworks!
+platform :ios, '9.0'
 
 target 'SandboxExplorer_Example' do
   pod 'SandboxExplorer', :path => '../'
@@ -6,6 +7,6 @@ target 'SandboxExplorer_Example' do
   target 'SandboxExplorer_Tests' do
     inherit! :search_paths
 
-    
+
   end
 end

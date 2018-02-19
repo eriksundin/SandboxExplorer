@@ -164,7 +164,7 @@ class SanboxExplorerViewController: UITableViewController {
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(closeButtonTapped))
     }
 
-    func closeButtonTapped() {
+    @objc func closeButtonTapped() {
         delegate?.sanboxExplorerDidTapCancel(self)
     }
 
@@ -199,10 +199,10 @@ class SanboxExplorerViewController: UITableViewController {
             let diff = size - previousSize
             if diff > 0 {
                 let diffText = " (+\(ByteCountFormatter.string(fromByteCount: Int64(diff), countStyle: .file)))"
-                text.append(NSAttributedString(string: diffText, attributes: [NSForegroundColorAttributeName: UIColor.red]))
+                text.append(NSAttributedString(string: diffText, attributes: [NSAttributedStringKey.foregroundColor: UIColor.red]))
             } else if diff < 0 {
                 let diffText = " (\(ByteCountFormatter.string(fromByteCount: Int64(diff), countStyle: .file)))"
-                text.append(NSAttributedString(string: diffText, attributes: [NSForegroundColorAttributeName: UIColor.blue]))
+                text.append(NSAttributedString(string: diffText, attributes: [NSAttributedStringKey.foregroundColor: UIColor.blue]))
             }
             cell.detailTextLabel?.attributedText = text
         }
