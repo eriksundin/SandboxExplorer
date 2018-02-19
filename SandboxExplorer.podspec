@@ -23,7 +23,7 @@ Between usages the file sizes are cached and changes in the like are visible in 
   s.author           = { 'Erik Sundin' => 'erik@eriksundin.se' }
   s.source           = { :git => 'https://github.com/eriksundin/SandboxExplorer.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/erik_sundin'
-
+  s.swift_version = "4.0"
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'SandboxExplorer/Classes/**/*'
