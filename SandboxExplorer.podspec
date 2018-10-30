@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SandboxExplorer'
-  s.version          = '2.0.0'
+  s.version          = '2.1.0'
   s.summary          = 'Simple debugging tool for exploring the contents of your iOS app sandbox.'
 
   s.description      = <<-DESC
@@ -23,7 +23,7 @@ Between usages the file sizes are cached and changes in the like are visible in 
   s.author           = { 'Erik Sundin' => 'erik@eriksundin.se' }
   s.source           = { :git => 'https://github.com/eriksundin/SandboxExplorer.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/erik_sundin'
-  s.swift_version = "4.0"
+  s.swift_version = "4.2"
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'SandboxExplorer/Classes/**/*'
