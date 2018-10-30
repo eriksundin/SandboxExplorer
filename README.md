@@ -49,7 +49,7 @@ class MyRootViewController: UIViewController {
 
 ## Changelog
 
-2.1.0 - Swift 4.2 upgrade
+3.0.0 - Swift 4.2 upgrade
 
 2.0.0 - Swift 4 upgrade
 
