@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         return true
     }
 
-    override func motionBegan(_ motion: UIEventSubtype, with event: UIEvent?) {
+    override func motionBegan(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
         if motion == .motionShake {
             SandboxExplorer.shared.toggleVisibility()
         }

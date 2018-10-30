@@ -39,7 +39,7 @@ class MyRootViewController: UIViewController {
         return true
     }
 
-    override func motionBegan(_ motion: UIEventSubtype, with event: UIEvent?) {
+    override func motionBegan(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
         if motion == .motionShake {
             SandboxExplorer.shared.toggleVisibility()
         }
@@ -48,6 +48,8 @@ class MyRootViewController: UIViewController {
 ```
 
 ## Changelog
+
+2.1.0 - Swift 4.2 upgrade
 
 2.0.0 - Swift 4 upgrade
 

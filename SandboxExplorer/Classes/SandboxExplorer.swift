@@ -124,7 +124,7 @@ private func traverse(root: URL, sizeCache: inout [String: Int]) -> ([File], Int
 /// Cell for file resources.
 class FileCell: UITableViewCell {
 
-    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: .subtitle, reuseIdentifier: reuseIdentifier)
         imageView?.contentMode = .scaleAspectFit
     }
@@ -199,10 +199,10 @@ class SandboxExplorerViewController: UITableViewController {
             let diff = size - previousSize
             if diff > 0 {
                 let diffText = " (+\(ByteCountFormatter.string(fromByteCount: Int64(diff), countStyle: .file)))"
-                text.append(NSAttributedString(string: diffText, attributes: [NSAttributedStringKey.foregroundColor: UIColor.red]))
+                text.append(NSAttributedString(string: diffText, attributes: [NSAttributedString.Key.foregroundColor: UIColor.red]))
             } else if diff < 0 {
                 let diffText = " (\(ByteCountFormatter.string(fromByteCount: Int64(diff), countStyle: .file)))"
-                text.append(NSAttributedString(string: diffText, attributes: [NSAttributedStringKey.foregroundColor: UIColor.blue]))
+                text.append(NSAttributedString(string: diffText, attributes: [NSAttributedString.Key.foregroundColor: UIColor.blue]))
             }
             cell.detailTextLabel?.attributedText = text
         }
